@@ -3,6 +3,8 @@
 # Bubble Sort
 **Bubble Sort** is a simple comparison-based sorting algorithm that repeatedly steps through a list, compares adjacent elements, and swaps them if they are in the wrong order. This process is repeated until the list is sorted.
 
+![image](https://github.com/user-attachments/assets/f2e00e8b-1b6f-460e-be95-2c58c2b7f141)
+
 ### How It Works:
 1. Start at the beginning of the list.
 2. Compare the first two adjacent elements. If the first element is greater than the second, swap them.
@@ -30,11 +32,9 @@ This process continues until the list becomes `[2, 3, 4, 5, 8]`.
 - **Best-case time complexity**: O(n) (if the list is already sorted)
 - **Average time complexity**: O(n²)
 
-
-![image](https://github.com/user-attachments/assets/f2e00e8b-1b6f-460e-be95-2c58c2b7f141)
-
 # Insertion Sort
 **Insertion Sort** is a simple and intuitive comparison-based sorting algorithm that builds the final sorted array one element at a time. It works by dividing the input array into two parts: a sorted and an unsorted part. Initially, the sorted part contains just the first element, and the unsorted part contains the rest. The algorithm then repeatedly takes the first element from the unsorted part and inserts it into the correct position in the sorted part.
+![image](https://github.com/user-attachments/assets/da967fd2-83fe-433c-8ad5-4f0380c2b8e2)
 
 ### How It Works:
 1. Start with the second element of the array (since a single element is trivially sorted).
@@ -80,11 +80,9 @@ Consider sorting the array `[5, 3, 8, 4, 2]` in ascending order using insertion 
 ### Use Cases:
 Insertion Sort is often used in scenarios where the data is nearly sorted, or for small datasets. It is also used as part of more complex algorithms like **Shell Sort** or **Timsort**.
 
-![image](https://github.com/user-attachments/assets/da967fd2-83fe-433c-8ad5-4f0380c2b8e2)
-
 # Selection Sort
 **Selection Sort** is a simple, comparison-based sorting algorithm that divides the input array into two parts: a sorted part (built from left to right) and an unsorted part. The algorithm repeatedly selects the smallest (or largest, depending on sorting order) element from the unsorted part and swaps it with the first element in the unsorted part, gradually growing the sorted portion of the array.
-
+![image](https://github.com/user-attachments/assets/70235f46-1ff9-4b36-ab65-7e998676f64b)
 ### How It Works:
 1. Start with the entire array as unsorted.
 2. Find the smallest (or largest) element in the unsorted part of the array.
@@ -135,11 +133,11 @@ This is because the algorithm always performs n - 1 comparisons for the first pa
 ### Use Cases:
 Selection Sort is useful when memory writes are expensive (as it only performs O(n) swaps), but because of its O(n²) time complexity, it is generally inefficient for large datasets. It is typically used for small datasets or in cases where simplicity is more important than performance.
 
-![image](https://github.com/user-attachments/assets/70235f46-1ff9-4b36-ab65-7e998676f64b)
-
 
 # Merge Sort
 **Merge Sort** is a divide-and-conquer sorting algorithm that breaks down a list into smaller sublists, sorts each sublist, and then merges the sorted sublists to produce the final sorted list. It is highly efficient and guarantees a time complexity of O(n log n) in the worst case, making it one of the fastest general-purpose sorting algorithms.
+
+![image](https://github.com/user-attachments/assets/f0bfd994-6159-4241-9ee2-a37291727f2b)
 
 ### How Merge Sort Works:
 1. **Divide**: Split the array into two halves.
@@ -201,10 +199,11 @@ Merge sort requires additional space to store the temporary arrays used for merg
 
 Merge sort is particularly useful when dealing with large data sets where efficiency and stability are critical, but the additional space requirement must be considered.
 
-![image](https://github.com/user-attachments/assets/f0bfd994-6159-4241-9ee2-a37291727f2b)
 
 # Quick Sort
 **Quick Sort** is a highly efficient and widely used sorting algorithm that employs the divide-and-conquer strategy. It works by selecting a "pivot" element from the array and partitioning the other elements into two subarrays according to whether they are less than or greater than the pivot. This process is repeated recursively for the subarrays, resulting in a sorted array.
+
+![image](https://github.com/user-attachments/assets/bd2d0326-7ff5-441b-bdfa-7e8a25a9fa5b)
 
 ### How Quick Sort Works:
 1. **Choose a Pivot**: Select an element from the array to serve as the pivot. The choice of the pivot can affect the performance of the algorithm.
@@ -254,4 +253,4 @@ Consider sorting the array `[10, 7, 8, 9, 1, 5]` using quick sort:
 
 ### Summary:
 Quick sort is a powerful and efficient sorting algorithm, especially suitable for large datasets. Its efficiency comes from the way it partitions the array around a pivot, and its in-place nature makes it memory-efficient. However, care must be taken with pivot selection to avoid worst-case scenarios.
-![image](https://github.com/user-attachments/assets/bd2d0326-7ff5-441b-bdfa-7e8a25a9fa5b)
+
